@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="/js/index.js"></script>
+    <script type="text/javascript" src="/js/signup.js"></script>
+    <script type="text/javascript" src="/js/login.js"></script>
+    <script type="text/javascript" src="/js/stock.js"></script>
+</head>
+<style>
+    h1 {
+        text-align: center;
+        font-family: 'Segoe UI';
+        color: rgb(0, 0, 0);
+        font-size: 50px;
+        font-style: normal;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: 'Segoe UI';
+        color: rgb(24, 24, 24);
+        font-style: italic;
+        font-size: 30px;
+    }
+
+    h3 {
+        text-align: center;
+        font-family: 'Segoe UI';
+        color: rgb(34, 56, 59);
+        font-style: italic;
+        font-size: 20px;
+    }
+
+    p {
+        text-align: center;
+        font-family: Geneva;
+    }
+
+    div {
+        text-align: center;
+        font-family: Geneva;
+    }
+
+    /* body { background-color: rgb(190, 245, 245);} */
+    body {
+        position: relative;
+    }
+
+    body::after {
+        content: "";
+        background: url('2927314.jpg');
+        background-size: cover;
+        opacity: 0.55;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .signup {
+        width: 250px;
+        height: 50px;
+        background-color: rgb(0, 225, 255);
+        color: black;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: hand;
+        font-family: verdana;
+    }
+
+    .login {
+        width: 250px;
+        height: 50px;
+        background-color: rgb(0, 225, 255);
+        color: black;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: hand;
+        font-family: verdana;
+    }
+
+    .check {
+        width: 150px;
+        height: 40px;
+        background-color: rgb(0, 247, 255);
+        color: black;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        font-family: verdana;
+    }
+</style>
+</style>
+<header>
+    <button class="signup" type="signup" id="signup" onclick="load_signup_page();" style="float: left;">
+        Sign Up </button>
+    <button class="login" type="login" id="login" onclick="load_login_page();" style="float: right;">
+        Login </button>
+</header>
+
+<body>
+    <br /><br />
+    <h1>Welcome to the Stock Watch !! </h1>
+
+    <h2> Look up the Global quote Stock Values per day!! </h2>
+
+    <h3>You can Access upto 4 requests per email for free. Later you will need to create an account and check the stock
+        values based on the pricing tier</h3>
+
+    <div>
+        <form name="User details" Method="POST" action="stock">
+            <br><br>
+
+            <p><b>Below are few examples of Equity names: <br />
+                    1. MSFT - For Microsoft <br />
+                    2. GOOGL - For Google <br />
+                    3. INTC - for Intel <br />
+                    4. M - for Macy's Inc <br />
+
+                    and so on. Please make sure to provide the right equity name!
+                    <br />
+                    <br />
+                    You will be redirected to the next page to provide your email address and the equity name !
+                    <br /><br />
+                </b></p>
+
+            <br />
+            <br />
+
+            <button class="check" type="check" id="check"> Stock Watch </button>
+
+        </form>
+    </div>
+</body>
+
+</html>
